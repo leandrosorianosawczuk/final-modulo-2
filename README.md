@@ -7,10 +7,10 @@ Programación Frontend y Frameworks JavaScript
 
 **Estudiante:** Ing. Leandro Soriano Sawczuk
 
-## Proyecto: Gestor de Tareas
-Una aplicación para gestionar tareas (To-Do List) con funcionalidades como agregar, editar, eliminar y marcar tareas como completadas.
+## Proyecto: Catálogo de Productos
+Una aplicación para listar productos con funcionalidades de búsqueda, detalles de productos y carrito de compras básico.
 
 ## Clase 1: Configuración del Proyecto y Primer Componente
-- Configurar el entorno Angular e instalar Angular Material.
-- Crear un componente TaskListComponent para mostrar una lista estática de tareas.
-- Personalizar la lista con estilos básicos.
+- Configurar el entorno Angular.
+- Crear un componente ProductListComponent para mostrar una lista de productos estática.
+- Estilizar la lista con Angular Material.
