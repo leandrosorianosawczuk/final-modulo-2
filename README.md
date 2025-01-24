@@ -14,3 +14,8 @@ Una aplicación para listar productos con funcionalidades de búsqueda, detalles
 - Configurar el entorno Angular.
 - Crear un componente ProductListComponent para mostrar una lista de productos estática.
 - Estilizar la lista con Angular Material.
+
+## Clase 2: Componentes y Comunicación (Input/Output)
+- Crear un componente ProductCardComponent para mostrar detalles individuales de un producto.
+- Implementar @Input para pasar datos al componente hijo.
+- Crear un botón de "Agregar al carrito" con eventos (@Output).
