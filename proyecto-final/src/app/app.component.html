@@ -1,4 +1,32 @@
-<h1>Lista de Productos</h1>
-<app-product-list-component></app-product-list-component>
+<h1>Catálogo de Productos</h1>
 
-<router-outlet />
+<div class="container">
+  <app-product-list-component></app-product-list-component>
+
+  <app-product-card-component 
+    descripcion="Prenda de vestir para el torso y los hombros, de tela ligera y sin abotonaduras, que se usa como vestimenta informal."
+    imagen="img/polera.jpg"
+    nombre="Polera"
+    (agregarItem)="item($event)"
+  ></app-product-card-component>
+  <app-product-card-component 
+    descripcion="Prenda de vestir que se ajusta a la cintura y llega generalmente hasta el pie, cubriendo cada pierna separadamente."
+    imagen="img/pantalon.jpeg"
+    nombre="Pantalón"
+    (agregarItem)="item($event)"
+  ></app-product-card-component>
+  <app-product-card-component 
+    descripcion="Calzado que no pasa del tobillo, con la parte inferior de suela y lo demás de piel, fieltro, paño u otro tejido, más o menos escotado por el empeine."
+    imagen="img/zapato.jpeg"
+    nombre="Zapato"
+    (agregarItem)="item($event)"
+  ></app-product-card-component>
+  <app-product-card-component 
+    descripcion="Prenda de punto, seda, nailon, etcétera, que cubre el pie y la pierna hasta la rodilla o más arriba. Disponibles en todos los colores."
+    imagen="img/medias.jpg"
+    nombre="Medias"
+    (agregarItem)="item($event)"
+  ></app-product-card-component>
+
+  <!-- <router-outlet /> -->
+</div>

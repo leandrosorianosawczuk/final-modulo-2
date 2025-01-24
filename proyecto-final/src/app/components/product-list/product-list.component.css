@@ -1,3 +1,7 @@
+mat-list-item {
+  display: inline;
+}
+
 .example-card {
   margin: 1em;
   max-width: 400px;
