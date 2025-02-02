@@ -1,0 +1,9 @@
+.pokemon-card {
+  float: left;
+  margin: 1em;
+  max-width: 200px;
+}
+
+mat-card mat-card-content h4 {
+  text-transform: capitalize;
+}

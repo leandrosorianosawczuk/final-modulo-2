@@ -19,3 +19,8 @@ Una aplicación para listar productos con funcionalidades de búsqueda, detalles
 - Crear un componente ProductCardComponent para mostrar detalles individuales de un producto.
 - Implementar @Input para pasar datos al componente hijo.
 - Crear un botón de "Agregar al carrito" con eventos (@Output).
+
+## Clase 3: Servicios para Manejo de Datos
+- Crear un servicio PokemonService para manejar datos de productos.
+- Usar almacenamiento en memoria para gestionar el carrito.
+- Mostrar la cantidad de productos en el carrito.

@@ -3,30 +3,46 @@
 <div class="container">
   <app-product-list-component></app-product-list-component>
 
-  <app-product-card-component 
-    descripcion="Prenda de vestir para el torso y los hombros, de tela ligera y sin abotonaduras, que se usa como vestimenta informal."
-    imagen="img/polera.jpg"
-    nombre="Polera"
-    (agregarItem)="item($event)"
-  ></app-product-card-component>
-  <app-product-card-component 
-    descripcion="Prenda de vestir que se ajusta a la cintura y llega generalmente hasta el pie, cubriendo cada pierna separadamente."
-    imagen="img/pantalon.jpeg"
-    nombre="Pantalón"
-    (agregarItem)="item($event)"
-  ></app-product-card-component>
-  <app-product-card-component 
-    descripcion="Calzado que no pasa del tobillo, con la parte inferior de suela y lo demás de piel, fieltro, paño u otro tejido, más o menos escotado por el empeine."
-    imagen="img/zapato.jpeg"
-    nombre="Zapato"
-    (agregarItem)="item($event)"
-  ></app-product-card-component>
-  <app-product-card-component 
-    descripcion="Prenda de punto, seda, nailon, etcétera, que cubre el pie y la pierna hasta la rodilla o más arriba. Disponibles en todos los colores."
-    imagen="img/medias.jpg"
-    nombre="Medias"
-    (agregarItem)="item($event)"
-  ></app-product-card-component>
+  <div style="clear: both">
+    <app-product-card-component 
+      descripcion="Prenda de vestir para el torso y los hombros, de tela ligera y sin abotonaduras, que se usa como vestimenta informal."
+      imagen="img/polera.jpg"
+      nombre="Polera"
+      (agregarItem)="item($event)"
+    ></app-product-card-component>
+    <app-product-card-component 
+      descripcion="Prenda de vestir que se ajusta a la cintura y llega generalmente hasta el pie, cubriendo cada pierna separadamente."
+      imagen="img/pantalon.jpeg"
+      nombre="Pantalón"
+      (agregarItem)="item($event)"
+    ></app-product-card-component>
+    <app-product-card-component 
+      descripcion="Calzado que no pasa del tobillo, con la parte inferior de suela y lo demás de piel, fieltro, paño u otro tejido, más o menos escotado por el empeine."
+      imagen="img/zapato.jpeg"
+      nombre="Zapato"
+      (agregarItem)="item($event)"
+    ></app-product-card-component>
+    <app-product-card-component 
+      descripcion="Prenda de punto, seda, nailon, etcétera, que cubre el pie y la pierna hasta la rodilla o más arriba. Disponibles en todos los colores."
+      imagen="img/medias.jpg"
+      nombre="Medias"
+      (agregarItem)="item($event)"
+    ></app-product-card-component>
+  </div>
+
+  <div style="clear: both;">
+    <h3>Pokémons</h3>
+    <div class="cart-container">
+      <span [matBadge]="totalPokemons" matBadgeOverlap="false">Pokémons agregados</span>
+    </div>
+    @for (pokemon of pokemonDetails; track pokemon.name) {
+      <app-pokemon-component 
+        [nombre]="pokemon.name"
+        [imagen]="pokemon.sprites.other['official-artwork'].front_default"
+        (agregarPokemon)="pokemonCart()"
+      ></app-pokemon-component>
+    }
+  </div>
 
   <!-- <router-outlet /> -->
 </div>

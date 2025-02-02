@@ -1,0 +1,9 @@
+<mat-card class="pokemon-card" appearance="outlined">
+  <img mat-card-image [src]="imagen">
+  <mat-card-content>
+    <h4>{{ nombre }}</h4>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="agregarAlCarrito()">Agregar Pokémon</button>
+  </mat-card-actions>
+</mat-card>
