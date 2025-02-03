@@ -24,3 +24,8 @@ Una aplicación para listar productos con funcionalidades de búsqueda, detalles
 - Crear un servicio PokemonService para manejar datos de productos.
 - Usar almacenamiento en memoria para gestionar el carrito.
 - Mostrar la cantidad de productos en el carrito.
+
+## Clase 4: Formularios y Validaciones
+- Agregar un formulario con un campo de búsqueda.
+- Implementar filtrado en la lista de productos basado en el nombre o categoría.
+- Validar la entrada del usuario.

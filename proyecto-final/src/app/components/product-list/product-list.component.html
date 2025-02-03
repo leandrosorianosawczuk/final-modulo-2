@@ -1,9 +1,32 @@
 
+<form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+  <mat-form-field class="example-form-field">
+    <mat-label>Buscar categoría</mat-label>
+    <input 
+      id="search"
+      name="search"
+      type="text"
+      matInput
+      required
+      #search="ngModel"
+      [(ngModel)]="query"
+    >
+  </mat-form-field>
+  <button mat-flat-button
+    type="submit"
+    id="submit"
+    [disabled]="!searchForm.form.valid || !searchForm.form.dirty"
+  >Buscar</button>
+  <button mat-flat-button
+    type="button"
+    id="restablecer"
+    (click)="restablecerLista()"
+  >Restablecer</button>
+</form>
+
 <mat-list role="list">
   <h3 matSubheader>Listado</h3>
-  <mat-list-item role="listitem">Polera</mat-list-item>
-  <mat-list-item role="listitem">Camisa</mat-list-item>
-  <mat-list-item role="listitem">Zapatos</mat-list-item>
-  <mat-list-item role="listitem">Medias</mat-list-item>
-  <mat-list-item role="listitem">Pantalón</mat-list-item>
+  @for (category of categoryContent; track $index) {
+    <mat-list-item role="listitem">{{ category }}</mat-list-item>
+  }
 </mat-list>
