@@ -1,0 +1,13 @@
+mat-toolbar {
+  background-color: gray;
+  color: white;
+}
+
+mat-toolbar span {
+  padding: 1em;
+}
+
+mat-toolbar span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

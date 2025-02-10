@@ -2,6 +2,15 @@ mat-list-item {
   display: inline;
 }
 
+mat-form-field {
+  width: 30%;
+}
+
+button {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
 .example-card {
   margin: 1em;
   max-width: 400px;
@@ -10,4 +19,10 @@ mat-list-item {
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

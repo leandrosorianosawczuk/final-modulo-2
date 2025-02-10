@@ -1,0 +1,14 @@
+<div>
+  <h2>Catálogo de Pokémons</h2>
+  <p>Agregue al carrito los Pokémons.</p>
+  <div class="cart-container">
+    <span [matBadge]="totalPokemons" matBadgeOverlap="false">Pokémons agregados</span>
+  </div>
+  @for (pokemon of pokemonDetails; track pokemon.name) {
+    <app-pokemon-component 
+      [nombre]="pokemon.name"
+      [imagen]="pokemon.sprites.other['official-artwork'].front_default"
+      (agregarPokemon)="pokemonCart()"
+    ></app-pokemon-component>
+  }
+</div>

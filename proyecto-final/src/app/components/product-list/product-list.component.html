@@ -30,3 +30,14 @@
     <mat-list-item role="listitem">{{ category }}</mat-list-item>
   }
 </mat-list>
+
+<div class="flex-container">
+  @for (product of productsContent; track $index) {
+    <app-product-card-component
+      [descripcion]="product.descripcion"
+      [imagen]="product.imagen"
+      [nombre]="product.nombre"
+      (agregarItem)="item($event)"
+    ></app-product-card-component>
+  }
+</div>

@@ -2,10 +2,12 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-product-card-component',
   imports: [
+    RouterLink,
     MatButtonModule,
     MatCardModule
   ],
