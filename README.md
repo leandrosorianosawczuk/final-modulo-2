@@ -29,3 +29,8 @@ Una aplicación para listar productos con funcionalidades de búsqueda, detalles
 - Agregar un formulario con un campo de búsqueda.
 - Implementar filtrado en la lista de productos basado en el nombre o categoría.
 - Validar la entrada del usuario.
+
+## Clase 5: Rutas
+- Configurar rutas para las vistas de lista y detalles de producto.
+- Implementar navegación al detalle de un producto al hacer clic en una tarjeta.
+- Revisar y refactorizar el proyecto.
