@@ -1,14 +1,24 @@
 <div>
   <h2>Catálogo de Pokémons</h2>
   <p>Agregue al carrito los Pokémons.</p>
+  <div style="width: 100%;  background-color: lightgray; text-align: right;">
+    <ul>
+      <li style="display: inline-block; padding: 1em">Pokémons por página: 20</li>
+      <li style="display: inline-block; padding: 1em">Mostrando: {{ offset + 1 }} a {{ offset + 20 }}</li>
+      <button mat-flat-button id="previous" [disabled]="isDisabled" (click)="previousPage()">Anterior</button>
+      <button mat-flat-button (click)="nextPage()">Siguiente</button>
+    </ul>
+  </div>
   <div class="cart-container">
     <span [matBadge]="totalPokemons" matBadgeOverlap="false">Pokémons agregados</span>
   </div>
-  @for (pokemon of pokemonDetails; track pokemon.name) {
-    <app-pokemon-component 
-      [nombre]="pokemon.name"
-      [imagen]="pokemon.sprites.other['official-artwork'].front_default"
-      (agregarPokemon)="pokemonCart()"
-    ></app-pokemon-component>
-  }
+  <div class="flex-container">
+    @for (pokemon of pokemonDetails; track pokemon.name) {
+      <app-pokemon-component 
+        [nombre]="pokemon.name"
+        [imagen]="pokemon.sprites.other['official-artwork'].front_default"
+        (agregarPokemon)="pokemonCart()"
+      ></app-pokemon-component>
+    }
+  </div>
 </div>

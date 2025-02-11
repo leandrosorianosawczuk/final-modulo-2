@@ -34,3 +34,8 @@ Una aplicación para listar productos con funcionalidades de búsqueda, detalles
 - Configurar rutas para las vistas de lista y detalles de producto.
 - Implementar navegación al detalle de un producto al hacer clic en una tarjeta.
 - Revisar y refactorizar el proyecto.
+
+## Clase 6: Proyecto Final
+- Conectar la aplicación a una API para obtener la lista de productos.
+- Implementar paginación en la lista de productos.
+- Manejar errores de red con retroalimentación visual.

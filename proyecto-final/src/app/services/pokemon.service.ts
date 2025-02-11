@@ -13,10 +13,10 @@ export class PokemonService {
     this.url = 'https://pokeapi.co/api/v2/pokemon';
   }
 
-  getPokemons(): Promise<any> {
+  getPokemons(offset: number): Promise<any> {
     return new Promise((resolve, reject) => {
       this.http
-        .get<any>(`${ this.url }?limit=30`)
+        .get<any>(`${ this.url }?offset=${ offset }&limit=20`)
         .subscribe({
           next: data => resolve(data),
           error: err => reject(err)

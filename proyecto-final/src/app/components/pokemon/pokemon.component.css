@@ -1,7 +1,6 @@
 .pokemon-card {
-  float: left;
   margin: 1em;
-  max-width: 200px;
+  width: 160px;
 }
 
 mat-card mat-card-content h4 {
